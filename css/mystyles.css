@@ -1,3 +1,61 @@
-h1{
-    font-family: "Comic Sans MS", cursive, sans-serif !important;
+body{
+    font-family:'Open Sans', sans-serif
+    background-color: black; /*page background color, is overridden by background image*/
+    background-image:url("https://cdn.wallpapersafari.com/93/96/ECZPi8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color:whitesmoke /*font color*/
+}
+p{
+    font-size: 20px;
+}
+li{
+    font-size:20px;
+}
+ul li{
+    font-size:18px;
+}
+img{
+    display: block; 
+    /*content*/
+    padding: 5px; /*immediately around the image*/
+    border: 2px solid white;
+    margin: auto; /*makes buffer on either side equivalent, works because the images are blocked*/
+}
+a{
+    color:aqua; 
+}
+a:visited{
+    color:aquamarine; /*color once you've clicked the link*/
+}
+.common{
+    border: 2px solid white;
+    position: absolute; /*only position exactly as specified; default position is top left*/
+}
+.nav{
+    top: 0;
+    right: 0;
+    z-index: 1; /*brings it forward*/
+    background-color: black;
+}
+.footer{
+    position: fixed;
+    background-color: black;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: block; /*has div take up entire block*/
+    text-align: center;
+}
+.content{
+    left: 0;
+    right: 0;
+    top: 20;
+    text-align: center;
+}
+.gallery img{
+    display: inline;
+    width: 250px;
+    
 }
